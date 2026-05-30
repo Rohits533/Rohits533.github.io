@@ -15,7 +15,6 @@
             overflow-x: hidden;
         }
 
-        /* Navbar */
         nav {
             position: fixed;
             top: 0;
@@ -48,7 +47,6 @@
 
         .nav-links a:hover { color: #00d4ff; }
 
-        /* Hero */
         .hero {
             min-height: 100vh;
             display: flex;
@@ -148,7 +146,6 @@
             transform: translateY(-3px);
         }
 
-        /* Stats */
         .stats {
             display: flex;
             gap: 40px;
@@ -158,9 +155,7 @@
             animation: fadeInUp 1.4s ease;
         }
 
-        .stat {
-            text-align: center;
-        }
+        .stat { text-align: center; }
 
         .stat-number {
             font-size: 36px;
@@ -176,7 +171,6 @@
             margin-top: 4px;
         }
 
-        /* Section */
         section {
             padding: 80px 20px;
             max-width: 1100px;
@@ -197,7 +191,6 @@
             margin-bottom: 50px;
         }
 
-        /* Skills */
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
@@ -222,7 +215,6 @@
         .skill-icon { font-size: 32px; margin-bottom: 10px; }
         .skill-name { font-size: 13px; font-weight: 500; color: #cdd6f4; }
 
-        /* Projects */
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -300,7 +292,6 @@
 
         .project-link:hover { gap: 12px; }
 
-        /* About */
         .about-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -336,7 +327,6 @@
             color: #cdd6f4;
         }
 
-        /* Contact */
         .contact-section {
             text-align: center;
             padding: 80px 20px;
@@ -372,7 +362,6 @@
             box-shadow: 0 10px 30px rgba(0, 212, 255, 0.2);
         }
 
-        /* Footer */
         footer {
             text-align: center;
             padding: 30px;
@@ -381,7 +370,6 @@
             border-top: 1px solid rgba(255,255,255,0.05);
         }
 
-        /* Animations */
         @keyframes fadeInDown {
             from { opacity: 0; transform: translateY(-30px); }
             to { opacity: 1; transform: translateY(0); }
@@ -392,7 +380,6 @@
             to { opacity: 1; transform: translateY(0); }
         }
 
-        /* Mobile */
         @media (max-width: 768px) {
             nav { padding: 16px 20px; }
             .nav-links { display: none; }
@@ -403,7 +390,6 @@
 </head>
 <body>
 
-<!-- Navbar -->
 <nav>
     <div class="logo">Rohit Savan</div>
     <div class="nav-links">
@@ -414,18 +400,17 @@
     </div>
 </nav>
 
-<!-- Hero -->
 <div class="hero">
     <div class="hero-badge">🚀 AI Developer & BTech AIML Student</div>
     <h1>Building the Future<br>with <span class="gradient-text">Artificial Intelligence</span></h1>
-    <p>17 year old AI developer from Mumbai. I build and deploy real AI applications using Python, LangChain, and Groq. 7 live projects and counting.</p>
+    <p>17 year old AI developer from Mumbai. I build and deploy real AI applications using Python, LangChain, and Groq. 8 live projects and counting.</p>
     <div class="hero-buttons">
         <a href="#projects" class="btn-primary">View My Projects →</a>
         <a href="#contact" class="btn-secondary">Get In Touch</a>
     </div>
     <div class="stats">
         <div class="stat">
-            <div class="stat-number">7+</div>
+            <div class="stat-number">8+</div>
             <div class="stat-label">Live Projects</div>
         </div>
         <div class="stat">
@@ -443,10 +428,9 @@
     </div>
 </div>
 
-<!-- Projects -->
 <section id="projects">
     <h2 class="section-title">🚀 My <span class="gradient-text">Projects</span></h2>
-    <p class="section-subtitle">7 deployed AI applications built from scratch</p>
+    <p class="section-subtitle">8 deployed AI applications built from scratch</p>
     <div class="projects-grid">
 
         <div class="project-card">
@@ -540,10 +524,22 @@
             <a href="https://rohit-translator.streamlit.app" target="_blank" class="project-link">Live Demo →</a>
         </div>
 
+        <div class="project-card">
+            <div class="project-icon">📖</div>
+            <div class="project-title">AI Story Generator</div>
+            <div class="project-desc">Enter a genre, character and plot idea — AI writes a creative story with real-time streaming output word by word.</div>
+            <div class="project-tags">
+                <span class="tag">Groq</span>
+                <span class="tag">Streamlit</span>
+                <span class="tag">Streaming</span>
+                <span class="tag">ReportLab</span>
+            </div>
+            <a href="https://rohit-story-generator.streamlit.app" target="_blank" class="project-link">Live Demo →</a>
+        </div>
+
     </div>
 </section>
 
-<!-- Skills -->
 <section id="skills" style="background: linear-gradient(135deg, #1a1a2e, #0f1117); padding: 80px 20px; max-width: 100%;">
     <div style="max-width: 1100px; margin: 0 auto;">
         <h2 class="section-title">🛠️ My <span class="gradient-text">Skills</span></h2>
@@ -559,22 +555,23 @@
             <div class="skill-card"><div class="skill-icon">☁️</div><div class="skill-name">Deployment</div></div>
             <div class="skill-card"><div class="skill-icon">🧠</div><div class="skill-name">Prompt Engineering</div></div>
             <div class="skill-card"><div class="skill-icon">📊</div><div class="skill-name">RAG Systems</div></div>
+            <div class="skill-card"><div class="skill-icon">🌊</div><div class="skill-name">Streaming</div></div>
+            <div class="skill-card"><div class="skill-icon">🔗</div><div class="skill-name">LangGraph</div></div>
         </div>
     </div>
 </section>
 
-<!-- About -->
 <section id="about">
     <div class="about-content">
         <div class="about-text">
             <h2>About <span class="gradient-text">Me</span></h2>
             <p>I'm Rohit Savan, a 17 year old AI developer from Mumbai, India. I'm passionate about building practical AI applications that solve real problems.</p>
-            <p>I started learning AI development from scratch and built 7 deployed applications in a short time. I'm about to start my BTech in AI & ML and I'm already ahead of the curve.</p>
+            <p>I started learning AI development from scratch and built 8 deployed applications in a short time. I'm about to start my BTech in AI & ML and I'm already ahead of the curve.</p>
             <p>I believe in learning by building — every project teaches me something new and adds real value to my portfolio.</p>
         </div>
         <div class="about-highlights">
             <div class="highlight">🎓 Incoming BTech AIML Student</div>
-            <div class="highlight">🚀 7 Live Deployed AI Applications</div>
+            <div class="highlight">🚀 8 Live Deployed AI Applications</div>
             <div class="highlight">🌍 Based in Mumbai, India</div>
             <div class="highlight">💡 Self Taught AI Developer</div>
             <div class="highlight">🔥 Building with Python, LangChain & Groq</div>
@@ -583,7 +580,6 @@
     </div>
 </section>
 
-<!-- Contact -->
 <div class="contact-section" id="contact">
     <h2 class="section-title">📬 Get In <span class="gradient-text">Touch</span></h2>
     <p class="section-subtitle">Feel free to reach out for collaborations or just a chat!</p>
@@ -600,7 +596,6 @@
     </div>
 </div>
 
-<!-- Footer -->
 <footer>
     <p>Built with ❤️ by Rohit Savan • 2026 • Mumbai, India</p>
 </footer>
