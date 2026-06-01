@@ -61,7 +61,7 @@
         .project-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
         .tag { background: rgba(0, 212, 255, 0.1); border: 1px solid rgba(0, 212, 255, 0.2); border-radius: 20px; padding: 4px 12px; font-size: 12px; color: #00d4ff; transition: all 0.3s; }
         .tag:hover { background: rgba(0, 212, 255, 0.2); border-color: #00d4ff; }
-        .project-link { display: inline-flex; align-items: center; gap: 8px; color: #00d4ff; text-decoration: none; font-size: 14px; font-weight: 600; transition: gap 0.3s; }
+        .project-link { display: inline-flex; align-items: center; gap: 8px; color: #00d4ff; text-decoration: none; font-size: 14px; font-weight: 600; transition: gap 0.3s; cursor: pointer; }
         .project-link:hover { gap: 14px; }
         .about-content { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
         .about-text h2 { font-size: 32px; font-weight: 700; margin-bottom: 20px; }
@@ -119,7 +119,7 @@
             <div class="project-title">AI Assistant Platform</div>
             <div class="project-desc">Multi-feature AI platform with chatbot, web search agent, code explainer, quiz generator and PDF reader.</div>
             <div class="project-tags"><span class="tag">LangChain</span><span class="tag">Groq</span><span class="tag">Streamlit</span><span class="tag">RAG</span></div>
-            <a href="https://rohit-ai-chatbot-2026.streamlit.app" target="_blank" class="project-link">Live Demo →</a>
+            <a href="https://rohit-ai-chatbot-2026.streamlit.app" class="project-link" onclick="window.open(this.href,'_blank','noopener,noreferrer');return false;">Live Demo →</a>
         </div>
 
         <div class="project-card reveal">
@@ -127,7 +127,7 @@
             <div class="project-title">AI Resume Builder</div>
             <div class="project-desc">Fill in your details and AI generates a professional ATS-friendly resume with PDF download.</div>
             <div class="project-tags"><span class="tag">Groq</span><span class="tag">Streamlit</span><span class="tag">ReportLab</span><span class="tag">PDF</span></div>
-            <a href="https://rohit-resume-builder.streamlit.app" target="_blank" class="project-link">Live Demo →</a>
+            <a href="https://rohit-resume-builder.streamlit.app" class="project-link" onclick="window.open(this.href,'_blank','noopener,noreferrer');return false;">Live Demo →</a>
         </div>
 
         <div class="project-card reveal">
@@ -135,7 +135,7 @@
             <div class="project-title">AI News Summarizer</div>
             <div class="project-desc">Enter any topic and AI searches the web for latest news and summarizes top stories in real time.</div>
             <div class="project-tags"><span class="tag">LangChain</span><span class="tag">DuckDuckGo</span><span class="tag">Streamlit</span><span class="tag">Web Search</span></div>
-            <a href="https://rohit-news-summarizer.streamlit.app" target="_blank" class="project-link">Live Demo →</a>
+            <a href="https://rohit-news-summarizer.streamlit.app" class="project-link" onclick="window.open(this.href,'_blank','noopener,noreferrer');return false;">Live Demo →</a>
         </div>
 
         <div class="project-card reveal">
@@ -143,7 +143,7 @@
             <div class="project-title">AI Flashcard Generator</div>
             <div class="project-desc">Enter any topic and AI generates interactive flashcards with reveal animations for exam preparation.</div>
             <div class="project-tags"><span class="tag">Groq</span><span class="tag">Streamlit</span><span class="tag">JSON</span><span class="tag">Animations</span></div>
-            <a href="https://rohit-flashcards.streamlit.app" target="_blank" class="project-link">Live Demo →</a>
+            <a href="https://rohit-flashcards.streamlit.app" class="project-link" onclick="window.open(this.href,'_blank','noopener,noreferrer');return false;">Live Demo →</a>
         </div>
 
         <div class="project-card reveal">
@@ -151,7 +151,7 @@
             <div class="project-title">AI Interview Coach</div>
             <div class="project-desc">Practice interviews with AI. Get asked questions, submit answers and receive instant feedback with scores.</div>
             <div class="project-tags"><span class="tag">Groq</span><span class="tag">Streamlit</span><span class="tag">Session State</span><span class="tag">PDF</span></div>
-            <a href="https://rohit-interview-coach.streamlit.app" target="_blank" class="project-link">Live Demo →</a>
+            <a href="https://rohit-interview-coach.streamlit.app" class="project-link" onclick="window.open(this.href,'_blank','noopener,noreferrer');return false;">Live Demo →</a>
         </div>
 
         <div class="project-card reveal">
@@ -159,7 +159,7 @@
             <div class="project-title">AI Code Reviewer</div>
             <div class="project-desc">Paste any code and get a professional senior developer review with bugs, security issues and improvements.</div>
             <div class="project-tags"><span class="tag">Groq</span><span class="tag">Streamlit</span><span class="tag">ReportLab</span><span class="tag">Multi-language</span></div>
-            <a href="https://rohit-code-reviewer.streamlit.app" target="_blank" class="project-link">Live Demo →</a>
+            <a href="https://rohit-code-reviewer.streamlit.app" class="project-link" onclick="window.open(this.href,'_blank','noopener,noreferrer');return false;">Live Demo →</a>
         </div>
 
         <div class="project-card reveal">
@@ -167,7 +167,7 @@
             <div class="project-title">AI Translator</div>
             <div class="project-desc">Translate any text into 20+ languages including Indian languages with pronunciation guides and cultural notes.</div>
             <div class="project-tags"><span class="tag">Groq</span><span class="tag">Streamlit</span><span class="tag">20+ Languages</span><span class="tag">PDF</span></div>
-            <a href="https://rohit-translator.streamlit.app" target="_blank" class="project-link">Live Demo →</a>
+            <a href="https://rohit-translator.streamlit.app" class="project-link" onclick="window.open(this.href,'_blank','noopener,noreferrer');return false;">Live Demo →</a>
         </div>
 
         <div class="project-card reveal">
@@ -175,7 +175,7 @@
             <div class="project-title">AI Story Generator</div>
             <div class="project-desc">Enter a genre, character and plot idea — AI writes a creative story with real-time streaming output word by word.</div>
             <div class="project-tags"><span class="tag">Groq</span><span class="tag">Streamlit</span><span class="tag">Streaming</span><span class="tag">ReportLab</span></div>
-            <a href="https://rohit-story-generator.streamlit.app" target="_blank" class="project-link">Live Demo →</a>
+            <a href="https://rohit-story-generator.streamlit.app" class="project-link" onclick="window.open(this.href,'_blank','noopener,noreferrer');return false;">Live Demo →</a>
         </div>
 
         <div class="project-card reveal">
@@ -183,7 +183,7 @@
             <div class="project-title">AI Email Generator</div>
             <div class="project-desc">Generate professional emails instantly. Select email type, tone and context — AI writes a perfect email with streaming output.</div>
             <div class="project-tags"><span class="tag">Groq</span><span class="tag">Streamlit</span><span class="tag">Streaming</span><span class="tag">9 Email Types</span></div>
-            <a href="https://rohit-email-generator.streamlit.app" target="_blank" class="project-link">Live Demo →</a>
+            <a href="https://rohit-email-generator.streamlit.app" class="project-link" onclick="window.open(this.href,'_blank','noopener,noreferrer');return false;">Live Demo →</a>
         </div>
 
         <div class="project-card reveal">
@@ -191,7 +191,7 @@
             <div class="project-title">AI Study Planner</div>
             <div class="project-desc">Enter your exam date and subjects — AI creates a personalized day by day study schedule with streaming output.</div>
             <div class="project-tags"><span class="tag">Groq</span><span class="tag">Streamlit</span><span class="tag">Streaming</span><span class="tag">PDF</span></div>
-            <a href="https://rohit-study-planner.streamlit.app" target="_blank" class="project-link">Live Demo →</a>
+            <a href="https://rohit-study-planner.streamlit.app" class="project-link" onclick="window.open(this.href,'_blank','noopener,noreferrer');return false;">Live Demo →</a>
         </div>
 
     </div>
@@ -241,9 +241,9 @@
     <h2 class="section-title reveal">📬 Get In <span class="gradient-text">Touch</span></h2>
     <p class="section-subtitle reveal">Feel free to reach out for collaborations or just a chat!</p>
     <div class="contact-links reveal">
-        <a href="https://github.com/Rohits533" target="_blank" class="contact-link">🐙 GitHub</a>
+        <a href="https://github.com/Rohits533" class="contact-link" onclick="window.open(this.href,'_blank','noopener,noreferrer');return false;">🐙 GitHub</a>
         <a href="mailto:rohitsavan360@gmail.com" class="contact-link">📧 Email</a>
-        <a href="https://rohit-ai-chatbot-2026.streamlit.app" target="_blank" class="contact-link">🤖 Try My AI</a>
+        <a href="https://rohit-ai-chatbot-2026.streamlit.app" class="contact-link" onclick="window.open(this.href,'_blank','noopener,noreferrer');return false;">🤖 Try My AI</a>
     </div>
 </div>
 
